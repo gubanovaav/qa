@@ -25,11 +25,16 @@ public class AutomationPracticeFormTest {
         // Заполнение формы
         $("#firstName").setValue("Nastia");
         $("#lastName").setValue("Gubanova");
-        $("#userEmail").setValue("test@nastia.ru");
-        $(by("custom-control-input", "Female")).click();
+        $("#userEmail").setValue("test@nastia.ru"); //Выбор пола
+        $("label[class=custom-control-label]").click();
         $("#userNumber").setValue("1234567890"); // Номер телефона
-        $("#dateOfBirthInput").setValue("28 Apr 1989"); // Дата рождения
-        $("#hobbies-checkbox-1").click(); // Выбор хобби (чтение)
+        $("[id=dateOfBirthInput]").click(); // Выбор даты рождения
+        $("[class=react-datepicker__year-select]>[value='2000']").click();
+        $("[class=react-datepicker__month-select]>[value='3']").click();
+        $(".react-datepicker__month .react-datepicker__day--024").click();
+        $("[id=subjectsContainer]").click();
+        $("#dateOfBirthInput").setValue("20 May 1989"); // Дата рождения
+        $("#hobbies-checkbox-1").click(); // Выбор хобби
         $("#currentAddress").setValue("Some street 1"); // Текущий адрес
 
         // Отправка формы
