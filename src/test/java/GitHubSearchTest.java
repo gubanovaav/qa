@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
 
-public class GitHubSearch {
+public class GitHubSearchTest {
     @Test
     void ShouldFindJunit5Code () {
         //Открываем главную страницу
