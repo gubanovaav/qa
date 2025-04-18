@@ -43,17 +43,6 @@ public class AutomationPracticeFormTest {
         $("#submit").click();
 
         // Проверка результатов
-       // $("[class=table-responsive]").shouldHave(Condition.text("Nastia Gubanova"));
-       // $("[class=table-responsive]").shouldHave(Condition.text("test@nastia.ru"));
-      //  $("[class=table-responsive]").shouldHave(Condition.text("20 May,1989"));
-//$("[class=table-responsive]").shouldHave(Condition.text("Female"));
-//$("[class=table-responsive]").shouldHave(Condition.text("1234567890"));
-//$("[class=table-responsive]").shouldHave(Condition.text("Maths"));
-//$("[class=table-responsive]").shouldHave(Condition.text("Sports"));
-//$("[class=table-responsive]").shouldHave(Condition.text("egg.jpg"));
-//$("[class=table-responsive]").shouldHave(Condition.text("Monkey 23"));
-//$("[class=table-responsive]").shouldHave(Condition.text("NCR Delhi"));
-   //     $("#closeLargeModal").click();
 
         $x("//td[contains(text(),'Student Name')]/../td[2]").shouldHave(text("Nastia Gubanova"));
         $x("//td[contains(text(),'Student Email')]/../td[2]").shouldHave(text("test@nastia.ru"));
